@@ -1,4 +1,4 @@
-name             'chef'
+name             'chef-helper'
 maintainer       'Wanelo, Inc'
 maintainer_email 'dev@wanelo.com'
 license          'All rights reserved'

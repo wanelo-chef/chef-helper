@@ -1,4 +1,4 @@
-chef-cookbook
+chef-helper-cookbook
 =============
 
 Install a specific version of Chef everywhere. This cookbook helps to
@@ -7,19 +7,13 @@ keep your infrastructure up to date with the latest version of Chef.
 ## Installation
 
 ```ruby
-cookbook 'chef', git: 'https://github.com/wanelo-chef/chef-cookbook.git'
-```
-
-## Development
-
-```bash
-git clone https://github.com/wanelo-chef/chef-cookbook.git chef
+cookbook 'chef-helper', git: 'https://github.com/wanelo-chef/chef-helper.git'
 ```
 
 ## Usage
 
 ```ruby
-include_recipe 'chef'
+include_recipe 'chef_helper'
 
 chef_version '11.16.4'
 ```
