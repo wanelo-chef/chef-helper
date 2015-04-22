@@ -11,6 +11,8 @@ class Chef::Provider::ChefVersion < Chef::Provider
       version new_resource.version
       notifies :updated, 'chef_version[%s]' % new_resource.version, :immediately
     end
+  rescue => e
+    raise e if new_resource.raise_on_error
   end
 
   def action_updated
