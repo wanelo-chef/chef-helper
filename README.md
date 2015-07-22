@@ -7,13 +7,13 @@ keep your infrastructure up to date with the latest version of Chef.
 ## Installation
 
 ```ruby
-cookbook 'chef_helper', git: 'https://github.com/wanelo-chef/chef-helper.git'
+cookbook 'chef-helper', git: 'https://github.com/wanelo-chef/chef-helper.git'
 ```
 
 ## Usage
 
 ```ruby
-include_recipe 'chef_helper'
+include_recipe 'chef-helper'
 
 chef_version '11.16.4'
 ```
