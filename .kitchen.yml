@@ -4,12 +4,14 @@ driver:
 
 provisioner:
   name: chef_solo
+  require_chef_omnibus: "11.16.4"
 
 platforms:
-  - name: ubuntu-12.04
+  - name: ubuntu-14.04
   - name: centos-6.4
 
 suites:
   - name: default
     run_list:
+      - recipe[chef-helper::test_kitchen]
     attributes:

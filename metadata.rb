@@ -6,4 +6,5 @@ description      'Keeps Chef up to date on your servers'
 long_description 'Keeps Chef up to date on your servers'
 version          '0.1.1'
 
+depends 'apt'
 depends 'build-essential'
